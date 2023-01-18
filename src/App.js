@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Navbar from "./Components/Navbar";
+import PersonalData from "./Components/PersonalData";
+import GeneralData from "./Components/GeneralData";
+import { Stack } from "@mui/material"
+import { Box } from "@mui/system";
+import RenewBtn from "./Components/RenewBtn";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Box bgcolor='lavender' maxWidth='100vw'>
+        <Navbar />
+        <Stack direction='row' spacing={2} sx={{ display: { xs: 'none', sm: 'flex' } }} >
+          <PersonalData />
+          <GeneralData />
+        </Stack>
+        <Stack direction='column' spacing={2} sx={{ display: { xs: 'flex', sm: 'none' } }}>
+          <PersonalData />
+          <GeneralData />
+        </Stack>
+        <RenewBtn/>
+      </Box>
+    </>
   );
 }
 
