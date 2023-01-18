@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/insurance-bluepal/static/js/main.611702f9.js",
+    "static/js/787.4d7a9e9c.chunk.js": "/insurance-bluepal/static/js/787.4d7a9e9c.chunk.js",
+    "index.html": "/insurance-bluepal/index.html",
+    "main.611702f9.js.map": "/insurance-bluepal/static/js/main.611702f9.js.map",
+    "787.4d7a9e9c.chunk.js.map": "/insurance-bluepal/static/js/787.4d7a9e9c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.611702f9.js"
+  ]
+}
